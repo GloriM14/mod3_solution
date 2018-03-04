@@ -36,7 +36,8 @@ function NarrowItDownController (MenuSearchService) {
 
 menu.verifyitem=function(){
 MenuSearchService.removeItemtotal();
-  if(menu.itemname!=undefined){
+console.log(menu.itemname);
+  if((menu.itemname!=undefined) && (menu.itemname!="")){
   menu.items=MenuSearchService.getMatchedMenuItems(menu.itemname);
 }else{
 menu.items=[];
