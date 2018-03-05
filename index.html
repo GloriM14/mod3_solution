@@ -30,7 +30,7 @@
 on-remove="menu.removeItem(index)"> </found-items>
           </ul>
   </div>
-  <div ng-if="menu.items.length==0 ">
+  <div ng-if="menu.items.length==0 && menu.itemname!='undefinded' && menu.itemname!=''">
   <h3> Nothing Found </h3>
   </div>
 
